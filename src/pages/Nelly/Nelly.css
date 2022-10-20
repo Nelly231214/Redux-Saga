@@ -1,0 +1,58 @@
+.crud-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+}
+
+.ntable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* th,
+td {
+  border: 1px solid #ffffff;
+  text-align: left;
+  padding: 8px;
+  font-size: 32px;
+} */
+
+.nhead{
+  background-color: #E3C770;
+  border: 1px solid #ffffff;
+  text-align: left;
+  padding: 8px;
+  font-size: 32px;
+  border-collapse: collapse;
+}
+
+.nbody {
+  background-color: #FECD70;
+  border: 1px solid #ffffff;
+  text-align: left;
+  padding: 8px;
+  font-size: 32px;
+  border-collapse: collapse;
+}
+
+.nform {
+  display: flex;
+  gap: 3px;
+}
+
+.nform td:last-child {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nform * {
+  font-size: 21px;
+}
+.nbody button {
+  background-color: #F3E0B5;
+}
+.ntitle {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}

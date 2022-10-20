@@ -1,0 +1,32 @@
+[
+    {
+        "path": "/henrik",
+        "img": "assets/foot.jpg",
+        "title": "Հենրիկ Հայրապետյան",
+        "description": "Management panel for football players"
+    },
+    {
+        "path": "/nelly",
+        "img": "./assets/nelly.jpg",
+        "title": "Նելլի Բաղդասարյան",
+        "description": "Top Famous Armenians"
+    },
+    {
+        "path": "/nairi",
+        "img": "./assets/books.jpg",
+        "title": "Նաիրի Ասատրյան",
+        "description": "Booklist for Book shop"
+    },
+    {
+        "path": "/narek",
+        "img": "./assets/306739.jpg",
+        "title": "Նարեկ Մանուկյան",
+        "description": "Game Catalog"
+    },
+    {
+        "path": "/armine",
+        "img": "./assets/armine.jpg",
+        "title": "Արմինե Դեմիրչյան",
+        "description": "Admin panel of a shopping site"
+    }
+]
