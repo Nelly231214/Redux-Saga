@@ -6,6 +6,7 @@ import "./Nelly.css"
 import ReadOnlyRow from './Components/ReadOnlyRow'
 import EditableRow from './Components/EditableRow'
 import {getDataPeople} from "./redux/actions/getApi"
+import {deleteDataPeople} from "./redux/actions/getApi"
 
 export default function Nelly() {
   const [contacts, setContacts] = useState([])
@@ -27,6 +28,7 @@ export default function Nelly() {
   useEffect(()=>{
     dispatch(getDataPeople())
   }, [])
+  
   const handleAddFormChange = (event) => {
     event.preventDefault();
     const fieldName = event.target.getAttribute("name")
@@ -84,11 +86,9 @@ export default function Nelly() {
   const handleCancelClick = () => {
     setEditContactId(null)
   }
-  const handleDeleteClick= (contactId) => {
-    const newContacts = [...contacts]
-    const index= contacts.findIndex((contact)=>contact.id ===contactId)
-    newContacts.splice(index,1)
-    setContacts(newContacts)
+  const handleDeleteClick= (id) => {
+    console.log(id,222)
+    dispatch(deleteDataPeople(id))
 
   }
   return (
@@ -136,7 +136,7 @@ export default function Nelly() {
           </thead>
           <tbody>
             {people1.map((contact) =>
-              <Fragment>
+              <Fragment key={contact.id}>
                 {editContactId === contact.id ? (
                   <EditableRow
                     editFormData={editFormData}
